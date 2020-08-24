@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raj gym</title>
+</head>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Baloo Bhaina 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url("img/photo-1571902943202-507ec2618e8f.jpg");
+
+        /* background-repeat: no-repeat; */
+        /* height: 5000px; */
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20 px;
+        display: inline-block;
+        /* border: 2px solid red; */
+
+    }
+
+    .left img {
+        width: 84px;
+        height: 41px;
+        filter: invert(100);
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 4px auto;
+        /* border: 2px solid yellow; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 0px;
+        display: inline-block;
+        /* border: 2px solid green; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        /* display: inline-block; */
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 18px;
+
+    }
+
+    .navbar li a:hover {
+        color: brown;
+        text-decoration: underline;
+        /* padding: 15px; */
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhaina 2', cursive;
+        margin: 6px 6px;
+        /* background-color: rgb(22, 22, 21); */
+        color: rgb(240, 240, 247);
+        background-color: transparent;
+        padding: 0px 15px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        /* font-size: px; */
+        cursor: pointer;
+    }
+
+    .container {
+        font-family: 'Baloo Bhaina 2', cursive;
+        border: 2px solid green;
+        margin: 22px 122px;
+        padding: 26px 50px;
+        width: 31%;
+        border-radius: 48px;
+
+    }
+
+    .container h1 {
+        font-family: 'Baloo Bhaina 2', cursive;
+        text-align: center;
+        font-size: 38px;
+        color: rgb(226, 19, 19);
+        padding: 10px;
+        margin: -18px;
+    }
+
+    .form_group input {
+        font-family: 'Baloo Bhaina 2', cursive;
+        text-align: center;
+        display: block;
+        width: 388px;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 5px auto;
+        font-size: 17px;
+        border-radius: 22px;
+
+    }
+
+    .container button {
+        display: block;
+        width: 92%;
+        margin: 16px;
+        padding: -36px;
+        color: #e00e0e;
+        background-color: transparent;
+        font-size: 33px;
+
+    }
+</style>
+
+
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/pngtree-gym-logo-png-image_1824195.png" alt="">
+            <div style="line-height: 0px; font-size: 17px;">Raj Fitness</div>
+        </div>
+        <!-- mid for nevbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for contact button -->
+        <div class="right">
+            <button class="btn">call us now</button>
+
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym </h1>
+
+        <form action="noaction.php">
+            <div class="form_group">
+                <input type="text" name=" " placeholder="Enter your name">
+            </div>
+            <div class="form_group">
+                <input type="text" name=" " placeholder="Enter your Age">
+            </div>
+            <div class="form_group">
+                <input type="text" name=" " placeholder="Enter your Phone number">
+            </div>
+            <div class="form_group">
+                <input type="text" name=" " placeholder="Enter your Locality">
+            </div>
+
+            <button class="btn"> Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
